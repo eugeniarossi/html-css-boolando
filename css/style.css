@@ -10,8 +10,12 @@ RESET
 /*************
 COMMON
 *************/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -42,6 +46,27 @@ header nav {
 
 header nav ul {
     display: flex;
+    list-style-type: none;
+    gap: 7px;
+}
+
+header nav ul li > a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav .tools ul li > a > i {
+    font-size: 13px;
+}
+
+header nav .logo {
+    height: 100%;
+    padding: 13px;
+}
+
+header nav .logo img {
+    height: 100%;
 }
 
 /*************
