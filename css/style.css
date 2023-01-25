@@ -111,8 +111,9 @@ header nav ul {
     gap: 7px;
 }
 
-header nav .tools ul li > a > i {
-    font-size: 13px;
+header nav .categories ul li a > h5,
+header nav .tools ul li a {
+    font-size: 12px;
 }
 
 header nav .logo {
