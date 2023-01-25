@@ -24,6 +24,18 @@ ul {
     list-style-type: none;
 }
 
+header nav a,
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
 /*************
 COLORS
 *************/
@@ -33,13 +45,6 @@ header {
 
 footer {
     background-color: #1a1a1a;
-}
-
-header nav a,
-footer a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
 }
 
 /*************
@@ -76,7 +81,7 @@ header nav .tools ul li > a > i {
 
 header nav .logo {
     height: 100%;
-    padding: 13px;
+    padding: 14px;
 }
 
 header nav .logo img {
@@ -98,6 +103,13 @@ main .item {
     margin-bottom: 30px;
 }
 
+main .item .product {
+    position: relative;
+}
+
+/****
+img
+****/
 main .item .product > img {
     width: 100%;
     display: block;
@@ -115,13 +127,83 @@ main .item .product:hover > img:last-of-type {
     display: block;
 }
 
+/****
+info
+****/
+main .item .product-info {
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+}
+
+main .item .product-info > ul {
+    gap: 3px;
+}
+
+main .item .product-info ul li {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    padding: 4px 8px;
+}
+
+main .item .product-info .discount {
+    background-color: #ff0000;
+}
+
+main .item .product-info .sost {
+    background-color: #008000;
+} 
+
+main .item .product .favorite {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding: 12px 11px;
+}
+
+/****
+caption
+****/
+main .item .caption small:first-child,
+main .item .caption .price {
+    font-size: 11px;
+}
+
+main .item .caption .price span {
+    text-decoration: line-through;
+}
+
+main .item .caption .price strong {
+    color: red;
+}
+
 /*************
 FOOTER
 *************/
+footer {
+    border-bottom: 2px solid #ffffff;
+}
+
 footer .footer-bar {
     color: white;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+footer .footer-bar .col .service-info li > a {
+    font-size: 10px;
+}
+
+footer .footer-bar .col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer .footer-bar .col ul {
+    gap: 8px;
+} 
