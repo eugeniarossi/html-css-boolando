@@ -1,0 +1,53 @@
+/*************
+RESET
+*************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************
+COMMON
+*************/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*************
+COLORS
+*************/
+header {
+    background-color: #ff6900;
+}
+
+/*************
+DEBUG
+*************/
+
+/*************
+HEADER
+*************/
+header {
+    height: 50px;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+/*************
+MAIN
+*************/
+
+/*************
+FOOTER
+*************/
