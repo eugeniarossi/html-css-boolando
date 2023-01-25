@@ -24,16 +24,9 @@ ul {
     list-style-type: none;
 }
 
-header nav a,
-footer a {
-    color: white;
+a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-}
-
-header nav a:hover,
-footer a:hover {
-    text-decoration: underline;
 }
 
 /*************
@@ -47,10 +40,53 @@ footer {
     background-color: #1a1a1a;
 }
 
+header nav a,
+footer a {
+    color: white;
+}
+
+main a {
+    color: black;
+}
+
+main .item .product-info .discount {
+    background-color: #ff0000;
+}
+
+main .item .product-info .sost {
+    background-color: #008000;
+} 
+
+main .item .caption .price strong {
+    color: red;
+}
+
 /*************
 DEBUG
 *************/
 
+/*************
+EVENTS
+*************/
+main .item .product img:last-of-type {
+    display: none;
+}
+
+main .item .product:hover img:first-of-type {
+    display: none;
+}
+
+main .item .product:hover img:last-of-type {
+    display: block;
+}
+
+main .item .product .favorite:hover {
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 /*************
 HEADER
@@ -110,20 +146,8 @@ main .item .product {
 /****
 img
 ****/
-main .item .product > img {
+main .item .product img {
     width: 100%;
-    display: block;
-}
-
-main .item .product > img:last-of-type {
-    display: none;
-}
-
-main .item .product:hover > img:first-of-type {
-    display: none;
-}
-
-main .item .product:hover > img:last-of-type {
     display: block;
 }
 
@@ -147,12 +171,16 @@ main .item .product-info ul li {
     padding: 4px 8px;
 }
 
-main .item .product-info .discount {
-    background-color: #ff0000;
-}
+main .item .product-info .discount.half::after {
+    content: '-50%';
+} 
 
-main .item .product-info .sost {
-    background-color: #008000;
+main .item .product-info .discount.thirty::after {
+    content: '-30%';
+} 
+
+main .item .product-info .sost::after {
+    content: 'Sostenibilità';
 } 
 
 main .item .product .favorite {
@@ -173,10 +201,6 @@ main .item .caption .price {
 
 main .item .caption .price span {
     text-decoration: line-through;
-}
-
-main .item .caption .price strong {
-    color: red;
 }
 
 /*************
