@@ -94,7 +94,7 @@ HEADER
 header {
     height: 50px;
     position: fixed;
-    z-index: 100;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -138,6 +138,7 @@ main .content {
     gap: 10px;
     flex-wrap: wrap;
     margin: 90px auto 20px;
+    
 }
 
 main .item {
